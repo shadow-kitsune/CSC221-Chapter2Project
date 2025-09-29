@@ -2,10 +2,20 @@
 //
 
 #include <iostream>
-
+/*
+Pseudocode:
+1.Set ocean rise rate = 1.5 mm/year
+2.Calculate ocean rise in 5 years: rise5 = rate * 5
+3.Calculate ocean rise in 7 years: rise7 = rate * 7
+4.Calculate ocean rise in 10 years: rise10 = rate * 10
+5.Display all results
+*/
 int main()
 {
-    std::cout << "Hello World!\n";
+
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
