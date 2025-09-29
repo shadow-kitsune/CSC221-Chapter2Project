@@ -2,11 +2,39 @@
 //
 
 #include <iostream>
+using namespace std;
+/*
+Pseudocode:
+1.Set ocean rise rate = 1.5 mm/year
+2.Calculate ocean rise in 5 years: rise5 = rate * 5
+3.Calculate ocean rise in 7 years: rise7 = rate * 7
+4.Calculate ocean rise in 10 years: rise10 = rate * 10 
+5.Display all results
+*/
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+	// Ocean Levels Program - CSC 221 Chapter 2
+
+	// Constants
+	const double mmPerYear = 1.5;
+
+	// Calculations
+	double rise5 = mmPerYear * 5;
+	double rise7 = mmPerYear * 7;
+	double rise10 = mmPerYear * 10;
+
+	// Output
+	cout << "Ocean Levels Projection:" << endl;
+	cout << "In 5 years, the ocean will be " << rise5 << "mm higher than current level." << endl;
+	cout << "In 7 years, the ocean will be " << rise7 << "mm higher than current level." << endl;
+	cout << "In 10 years, the ocean will be " << rise10 << "mm higher than current level." << endl;
+
+	return 0;
 }
+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
