@@ -2,10 +2,41 @@
 //
 
 #include <iostream>
+using namespace std;
+/*
+CSC 221- Chapter 2 Project: Energy Drink Consumption
+
+Pseudocode:
+
+1.Set totalCustomers = 16500
+2.Set percentEnergyDrinkers = 15 // percentage of customers buying energy drinks
+3.Set percentCitrus = 58         // percentage of energy drinkers preferring citrus
+4.Calculate energyDrinkers = totalCustomers * percentEnergyDrinkers / 100
+5.Calculate citrusDrinkers = energyDrinkers * percentCitrus / 100
+6.Display energyDrinkers
+7.Display citrusDrinkers
+*/
 
 int main()
 {
-    std::cout << "Hello World!\n";
+// Total customers surveyed
+	int totalCustomers = 16500;
+
+// Percentages
+	double percentEnergyDrinkers = 15.0;  // 15%
+	double percentCitrus = 58.0;  // 58% of energy drinkers
+
+// Calculations
+	double energyDrinkers = totalCustomers * percentEnergyDrinkers / 100;
+	double citrusDrinkers = energyDrinkers * percentCitrus / 100.0;
+
+//Output
+	cout << "Approximate number of customers who purchase one or more energy drinks per week: "
+		<< static_cast<int>(energyDrinkers) << endl;
+	cout << "Approximate number of customers who prefer citrus-flavored energy drinks: "
+		<< static_cast<int>(citrusDrinkers) << endl;
+
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
