@@ -2,10 +2,39 @@
 //
 
 #include <iostream>
+using namespace std;
+/*
+CSC 221 - Chapter 2 Project: Distance per Tank of Gas
 
+Pseudocode:
+
+1.Set tankSize = 20 gallons
+2.Set mpgTown = 23.5 miles per gallon
+3.Set mpgHighway = 28.9 miles per gallon
+4.Calculate distanceTown = tankSize * mpgTown
+5.Calculate distanceHighway = tankSize * mpgHighway
+6.Display distanceTown
+7.Display distanceHighway
+*/
 int main()
 {
-    std::cout << "Hello World!\n";
+// Program: Distance per Tank of Gas
+// This program calculates the distance a car can travel
+// on one tank of gas in town and on the highway.
+
+// Variables
+	double tankSize = 20.0;    // Size of the gas tank in gallons
+	double mpgTown = 23.5;     // Miles per gallon in town
+	double mpgHighway = 28.9;  // Miles per gallon on highway
+//Calculations
+	double distanceTown = tankSize * mpgTown;
+	double distanceHighway = tankSize * mpgHighway;
+//Output results
+	cout << "The distance the car can travel in town is "
+		<< distanceTown << " miles. " << endl;
+	cout << "The distance the car can travel on the highway is "
+		<< distanceHighway << " miles. " << endl;
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
