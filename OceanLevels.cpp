@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+using namespace std;
 /*
 Pseudocode:
 1.Set ocean rise rate = 1.5 mm/year
@@ -12,9 +13,23 @@ Pseudocode:
 */
 int main()
 {
+	// Ocean Levels Program - CSC 221 Chapter 2
 
+	// Constants
+	const double mmPerYear = 1.5;
 
+	// Calculations
+	double rise5 = mmPerYear * 5;
+	double rise7 = mmPerYear * 7;
+	double rise10 = mmPerYear * 10;
 
+	// Output
+	cout << "Ocean Levels Projection:" << endl;
+	cout << "In 5 years, the ocean will be " << rise5 << "mm higher than current level." << endl;
+	cout << "In 7 years, the ocean will be " << rise7 << "mm higher than current level." << endl;
+	cout << "In 10 years, the ocean will be " << rise10 << "mm higher than current level." << endl;
+
+	return 0;
 
 }
 
